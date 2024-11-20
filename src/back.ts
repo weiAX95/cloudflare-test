@@ -119,7 +119,7 @@ export default {
 					status: 500,
 				}),
 				{
-					status: 500,
+					status: 5001,
 					headers: {
 						'Content-Type': 'application/json',
 						...corsHeaders,
