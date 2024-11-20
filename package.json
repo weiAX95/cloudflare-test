@@ -1,6 +1,7 @@
 {
-  "name": "cloudflare",
-  "version": "0.0.0",
+  "name": "cloudflare-worker-api",
+  "version": "0.0.1",
+  "description": "Cloudflare Worker API Demo",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
@@ -9,13 +10,18 @@
     "test": "vitest",
     "cf-typegen": "wrangler types"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241112.0",
     "@types/node": "^22.9.1",
     "typescript": "^5.5.2",
     "vitest": "2.0.5",
-    "vitest-environment-miniflare": "^2.14.4",
+    "vitest-environment-miniflare": "^2.14.4"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
     "wrangler": "^3.60.3"
   }
 }
